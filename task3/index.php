@@ -164,7 +164,7 @@ $a=array("Volvo"=>"XC90","BMW"=>"X5","Toyota"=>"Highlander");
 print_r(array_keys($a,"Highlander"));
 echo "<pre>";echo "</pre>";
 
-//array_keys  example Return all the values of an array (not the keys):
+//array_values example Return all the values of an array (not the keys):
 $a=array("Name"=>"Peter","Age"=>"41","Country"=>"USA");
 print_r(array_values($a));
 echo "<pre>";echo "</pre>";
@@ -201,6 +201,41 @@ echo array_shift($a)."<br>";
 print_r ($a);
 echo "<pre>";echo "</pre>";
 
-//
+//array_unshift   The array_unshift() function inserts new elements to an array. The new array values will be inserted in the beginning of the array. 
+$a=array("a"=>"red","b"=>"green");
+array_unshift($a,"blue");
+print_r($a);
+echo "<pre>";echo "</pre>";
+
+// The array_push() function inserts one or more elements to the end of an array.
+$a=array("red","green");
+array_push($a,"blue","yellow");
+print_r($a);
+echo "<pre>";echo "</pre>";
+
+//The array_pop() function deletes the last element of an array.
+$a=array("red","green","blue");
+array_pop($a);
+print_r($a);
+echo "<pre>";echo "</pre>";
+
+//the array_slice() function returns selected parts of an array. array_slice(array, start, length, preserve) 
+$a=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow","e"=>"brown");
+print_r(array_slice($a,1,2));
+echo "<pre>";echo "</pre>";
+$a=array("0"=>"red","1"=>"green","2"=>"blue","3"=>"yellow","4"=>"brown");
+print_r(array_slice($a,1,2));
+
+//The array_splice() function removes selected elements from an array and replaces it with new elements. The function also returns an array with the removed elements.
+$a1=array("0"=>"red","1"=>"green");
+$a2=array("0"=>"purple","1"=>"orange");
+array_splice($a1,0,0,$a2);
+print_r($a1);
+
+
+
+
+
+
 
 ?>
