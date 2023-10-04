@@ -2,5 +2,5 @@
 this is about 
 <a href="?page=home">Home</a>
 <br>
-<a href="?page=data">Country Data</a>
+<a href="?page=country">Country Data</a>
 </pre>
