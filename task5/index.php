@@ -37,6 +37,7 @@ echo "<pre>"; echo"</pre>";
 echo "Task 5.3| ";
 //3. search on recursive function and make an example 
 //Recursive functions are a powerful feature in PHP that allows a function to call itself repeatedly until a certain condition is met.
+
 function display_numbers($n) 
 {
     if ($n > 0) 
@@ -45,7 +46,7 @@ function display_numbers($n)
         echo $n . " ";
     }
 }
-display_numbers(40);
+display_numbers(5);
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 echo "<pre>"; echo"</pre>";
